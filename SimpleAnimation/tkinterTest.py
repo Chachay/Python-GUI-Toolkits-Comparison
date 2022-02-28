@@ -30,6 +30,7 @@ class MyWindow(tk.Tk):
         # Clear Canvas
         h = self.winfo_height()
         w = self.winfo_width()
+        self.canvas.delete('all')
         self.canvas.create_rectangle(0, 0, w, h, fill = 'white')
     
         # Update Circle Pos
